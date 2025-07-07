@@ -3,6 +3,12 @@ import stylistic from '@stylistic/eslint-plugin'
 import css from '@eslint/css'
 
 export default [
+	{
+		files: ["**/*.css"],
+		language: "css/css",
+		plugins: { css },
+		extends: ["css/recommended"],
+	},
 	...pluginVue.configs['flat/strongly-recommended'],
 	{
 		rules: {
@@ -19,11 +25,5 @@ export default [
 		languageOptions: {
 			sourceType: 'module',
 		},
-	},
-	{
-		files: ["**/*.css"],
-		language: "css/css",
-		plugins: { css },
-		extends: ["css/recommended"],
 	},
 ]
