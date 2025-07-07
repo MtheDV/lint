@@ -1,9 +1,9 @@
 {
-  "name": "mdv-lint",
+  "name": "@mthedv/lint",
   "version": "1.0.0",
   "description": "Custom lint configuration for my projects.",
   "main": "index.js",
-  "author": "MtheDV",
+  "author": "mthedv",
   "license": "ISC",
   "devDependencies": {
     "@stylistic/eslint-plugin": "^5.1.0",
