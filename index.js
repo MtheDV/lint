@@ -1,7 +1,8 @@
-const pluginVue = require("eslint-plugin-vue");
-const stylistic = require("@stylistic/eslint-plugin");
+import pluginVue from "eslint-plugin-vue"
+import stylistic from '@stylistic/eslint-plugin'
+import css from '@eslint/css'
 
-module.exports = [
+export default [
 	...pluginVue.configs['flat/strongly-recommended'],
 	{
 		rules: {
@@ -18,5 +19,11 @@ module.exports = [
 		languageOptions: {
 			sourceType: 'module',
 		},
+	},
+	{
+		files: ["**/*.css"],
+		language: "css/css",
+		plugins: { css },
+		extends: ["css/recommended"],
 	},
 ]
