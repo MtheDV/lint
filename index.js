@@ -10,7 +10,7 @@ export default [
 		files: ['**/*.{ts,tsx}'],
 		extends: [
 			js.configs.recommended,
-			tseslint.configs.recommended,
+			tseslint.configs.recommendedTypeChecked,
 			reactHooks.configs.flat.recommended,
 			reactRefresh.configs.vite,
 		],
@@ -24,6 +24,8 @@ export default [
 			parserOptions: {
 				sourceType: 'module',
 				ecmaVersion: 'latest',
+				tsconfigRootDir: import.meta.dirname,
+				project: ['**/tsconfig.json', '**/tsconfig.*.json'],
 			},
 		},
 		rules: {
