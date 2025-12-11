@@ -1,6 +1,6 @@
 {
 	"name": "@mthedv/lint",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"description": "Custom lint configuration for my projects.",
 	"main": "index.js",
 	"author": "mthedv",
