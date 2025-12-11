@@ -25,6 +25,7 @@ export default [
 				sourceType: 'module',
 				ecmaVersion: 'latest',
 				tsconfigRootDir: import.meta.dirname,
+				projectService: true,
 				project: ['**/tsconfig.json', '**/tsconfig.*.json'],
 			},
 		},
